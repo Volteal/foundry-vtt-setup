@@ -1,0 +1,7 @@
+# Ignore Foundry Data
+foundry-data/Data/*
+foundry-data/Logs/*
+foundry-data/Backups/
+foundry-data/container_cache/
+foundry-data/Config/admin.txt
+foundry-data/Config/license.json

@@ -1,0 +1,37 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx_prod
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    volumes:
+      - type: bind
+        source: ./nginx/conf/
+        target: /etc/nginx/conf.d/
+      - type: bind
+        source: ./nginx/certs/
+        target: /etc/nginx/ssl
+    networks:
+      - foundry_net
+    depends_on:
+      - foundry
+  foundry:
+    image: felddy/foundryvtt:release
+    container_name: foundry_prod
+    volumes:
+      - type: bind
+        source: ./foundry-data 
+        target: /data
+    environment:
+      - FOUNDRY_PASSWORD=hort9null4spil.BECH
+      - FOUNDRY_USERNAME=WendyACrescent
+      - FOUNDRY_ADMIN_KEY=jCjP3gzKCQXPsNiy6qv8rVVk7NwyRe
+    ports:
+      - 30000:30000
+    networks:
+      - foundry_net
+
+networks:
+  foundry_net:
