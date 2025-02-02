@@ -1,0 +1,31 @@
+{
+  "id": "module.tokenmagic.2025-02-01.1738446468202",
+  "title": "Token Magic FX",
+  "description": "<p>Add special effects and animations on your tokens, tiles, drawings and templates.</p>",
+  "version": "0.6.9",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.328"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 3492034,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 5188400,
+  "createdAt": 1738446468202,
+  "packageId": "tokenmagic",
+  "type": "module",
+  "system": null
+}

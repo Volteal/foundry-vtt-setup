@@ -1,0 +1,79 @@
+<div class="exaltedthird">
+    <div class="resource">
+      <div>
+        <label class="resource-label">{{localize "Ex3.Sign"}}:</label>
+        <select class="sign-select" name="object.sign" data-type="String">
+          {{#each data.signList as |signCategory signCategoryType|}}
+          <optgroup label="{{signCategory.label}}">
+            {{selectOptions signCategory.signs selected=../data.sign localize=true}}
+          </optgroup>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+    <div class="resource">
+      <div>
+        <label class="resource-label">{{localize "Ex3.IntervalTime"}}:</label>
+        {{localize data.baseIntervalTime}}
+      </div>
+    </div>
+    <div class="resource-content flexrow flex-center flex-between mt-2">
+      <label class="resource-label" style="font-size: 24px;">{{localize "Ex3.Ambition"}} ({{data.totalUsedAmbition}}/{{data.maxTotalAmbition}})</label>
+    </div>
+    <div class="resource">
+      {{#each data.ambitions as |ambition key|}}
+      <div>
+        <label class="resource-label">{{localize ambition.label}}:</label>
+        <select id="{{key}}" class="ambition-rerender" name="object.ambitions.{{key}}.value">
+            {{selectOptions ../data.selects.ambitionLevels selected=ambition.value localize=true}}
+        </select>
+        <label>{{localize "Ex3.Max"}}: {{../data.maxAmbition}}</label>
+        <div>
+          {{ambition.text}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="resource-content flexrow flex-center flex-between mt-2">
+      <label class="resource-label" style="font-size: 24px;">{{localize "Ex3.Means"}}</label>
+    </div>
+    <div>
+      <div class="resource">
+        <div>
+          <label class="resource-label">{{localize data.means.cooperation.label}}:</label>
+          <select id="cooperation" class="means-rerender" name="object.means.cooperation.value" data-type="String">
+            {{selectOptions data.selects.cooperationLevels selected=data.means.cooperation.value localize=true}}
+          </select>
+          <div>
+            {{data.means.cooperation.text}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resource">
+      <div>
+        <label class="resource-label">{{localize data.means.cosignatories.label}}:</label>
+        <select id="cosignatories" class="means-rerender" name="object.means.cosignatories.value" data-type="String">
+            {{selectOptions data.selects.cooperationLevels selected=data.means.cosignatories.value localize=true}}
+        </select>
+        <div>
+          {{data.means.cosignatories.text}}
+        </div>
+      </div>
+    </div>
+    <div class="resource">
+      <div>
+        <label class="resource-label">{{localize data.means.additionalIntervalTime.label}}:</label>
+        <select class="interval-rerender" name="object.means.additionalIntervalTime.value" data-type="String">
+            {{selectOptions data.selects.intervalTimesLevels selected=data.means.additionalIntervalTime.value localize=true}}
+        </select>
+      </div>
+    </div>
+    <div class="d-flex" style="align-items:center;">
+      <label class="resource-label">{{localize data.trappings.label}}:</label>
+      <input type="checkbox" name="object.trappings.value" {{ checked data.trappings.value }}/>
+    </div>
+    <div>
+      {{data.signTrappings}}
+    </div>
+</div>

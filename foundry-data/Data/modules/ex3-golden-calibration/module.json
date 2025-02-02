@@ -1,0 +1,50 @@
+{
+  "id": "ex3-golden-calibration",
+  "title": "Exalted Third Edition Golden Calibration",
+  "description": "A foundry version of the fan made golden calibration charmset",
+  "version": "1.2.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": [
+          {
+            "minimum": "2.9.12",
+            "verified": "2.9.12"
+          }
+        ]
+      }
+    ]
+  },
+  "url": "https://github.com/Aliharu/Ex3-Golden-Calibration",
+  "manifest": "https://raw.githubusercontent.com/Aliharu/Ex3-Golden-Calibration/master/module.json",
+  "download": "https://github.com/Aliharu/Ex3-Golden-Calibration/archive/v1.2.0.zip",
+  "bugs": "https://github.com/Aliharu/Ex3-Golden-Calibration/issues",
+  "readme": "https://github.com/Aliharu/Ex3-Golden-Calibration/blob/main/README.md",
+  "packs": [
+    {
+      "label": "Golden Calibration",
+      "name": "golden-calibration",
+      "type": "Item",
+      "system": "exaltedthird",
+      "path": "packs/golden-calibration"
+    },
+    {
+      "label": "Golden Calibration Intro",
+      "name": "golden-calibration-intro",
+      "type": "JournalEntry",
+      "system": "exaltedthird",
+      "path": "packs/golden-calibration-intro"
+    }
+  ],
+  "authors": [
+    {
+      "name": "aliharu"
+    }
+  ]
+}

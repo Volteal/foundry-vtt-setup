@@ -1,0 +1,25 @@
+{
+  "title": "lib - Color Settings",
+  "description": "Library that allows modules to add color settings and forms.",
+  "version": "3.0.3",
+  "id": "module.colorsettings.2025-02-01.1738446465132",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "12"
+  },
+  "relationships": {
+    "requires": [],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 83485,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 357818,
+  "createdAt": 1738446465132,
+  "packageId": "colorsettings",
+  "type": "module",
+  "system": null
+}

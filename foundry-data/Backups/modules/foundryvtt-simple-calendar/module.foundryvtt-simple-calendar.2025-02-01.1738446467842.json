@@ -1,0 +1,25 @@
+{
+  "id": "module.foundryvtt-simple-calendar.2025-02-01.1738446467842",
+  "title": "Simple Calendar",
+  "description": "A simple calendar module for keeping track of game days and events.",
+  "version": "2.4.18",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "12"
+  },
+  "relationships": {
+    "requires": [],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 455511,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 1441926,
+  "createdAt": 1738446467842,
+  "packageId": "foundryvtt-simple-calendar",
+  "type": "module",
+  "system": null
+}

@@ -1,0 +1,525 @@
+<div>
+    {{#if unifiedCharacterAdvancement}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>10 per dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Attributes</td>
+            <td>8 per dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Abilities</td>
+            <td>5 per dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Abilities</td>
+            <td>4 pre dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Specialty</td>
+            <td>2</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Merits</td>
+            <td>2 per dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>6 per dot</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Charm, Spell, or Evocation</td>
+            <td>12</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Caste/Favored Charm or Spell</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{else}}
+    <p><b>Advancement Costs</b></p>
+    {{#ifEquals exalt 'solar'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms/Spells</td>
+            <td>10 (8 if ability is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'abyssal'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms/Spells</td>
+            <td>10 (8 if ability is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'alchemical'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Attribute</td>
+            <td>Current rating x3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Attribute</td>
+            <td>Current rating x4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms</td>
+            <td>6 (4 if attribute is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charm Slot</td>
+            <td>4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Spells</td>
+            <td>10 (8 if Intelligence is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation/Martial Arts Charm</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'sidereal'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms/Spells</td>
+            <td>10 (8 if ability is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Sidereal Martial Arts Charm</td>
+            <td>10</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'dragonblooded'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms</td>
+            <td>10 (8 if ability is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Spell</td>
+            <td>12 (10 if Occult favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>12</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'lunar'}}
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Attribute</td>
+            <td>Curent Rating X 4 (-1 if Casteless)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Attribute</td>
+            <td>Curent Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Ability</td>
+            <td>Current Rating X 2</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms</td>
+            <td>10 (8 if attribute is favored, 9 if Not Favored and Casteless)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Spell</td>
+            <td>10 (9 if Intelligence favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Animal Latent Ability</td>
+            <td>6</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+
+    {{#ifEquals exalt 'exigent'}}
+    <p><b>Terrestrial Costs</b></p>
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Favored Attribute</td>
+            <td>Curent Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms/Spells</td>
+            <td>10 (8 if ability/attribute is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Spells</td>
+            <td>12 (10 if favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <p><b>Celestial Costs</b></p>
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Cost</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Attribute</td>
+            <td>Curent Rating X 4</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Favored Attribute</td>
+            <td>Curent Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(Current Rating X 2) - 1</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(Current Rating X 2)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>New Ability or Specialty</td>
+            <td>3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>8</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>New Rating X 3</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Charms/Spells</td>
+            <td>10 (8 if ability/attribute is favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Spells</td>
+            <td>10 (8 if favored)</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>10</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+    {{/if}}
+    <p><b>Training Times</b></p>
+    <table>
+        <tr style="text-align:center;">
+            <th>Trait</th>
+            <th>Time</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Attribute</td>
+            <td>(new rating) months</td>
+        </tr>
+        {{#ifEquals exalt 'lunar'}}
+        <tr style="text-align:center;">
+            <td>Caste/Favored Attribute</td>
+            <td>(new rating + 1) weeks</td>
+        </tr>
+        {{/ifEquals}}
+        <tr style="text-align:center;">
+            <td>Non-Caste/Favored Ability</td>
+            <td>(new rating) weeks</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Caste/Favored Ability</td>
+            <td>(new rating) days</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Specialty</td>
+            <td>Two weeks</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Purchased Merit</td>
+            <td>(new rating) weeks</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Willpower</td>
+            <td>One month</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Favored Charm</td>
+            <td>(Ability (Attribute for attribute exalts) minimum) days</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Non-Favored Charm</td>
+            <td>(Ability (Attribute for attribute exalts) + Essence minimum) days</td>
+        </tr>
+        {{#ifEquals exalt 'lunar'}}
+        <tr style="text-align:center;">
+            <td>Martial Arts Charm</td>
+            <td>(Martial Arts + Essence minimum) days</td>
+        </tr>
+        {{/ifEquals}}
+        <tr style="text-align:center;">
+            <td>Spells</td>
+            <td>Two weeks per Circle</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Evocation</td>
+            <td>(Essence minimum x 4) days</td>
+        </tr>
+        {{#ifEquals exalt 'lunar'}}
+        <tr style="text-align:center;">
+            <td>Animal Latent Ability</td>
+            <td>One week</td>
+        </tr>
+        {{/ifEquals}}
+    </table>
+
+    {{#ifEquals exalt 'dragonblooded'}}
+    <p><b>Essence Advancement</b></p>
+    <table>
+        <tr style="text-align:center;">
+            <th>Essence</th>
+            <th>XP</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 3</td>
+            <td>75</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 4</td>
+            <td>250</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 5</td>
+            <td>325</td>
+        </tr>
+    </table>
+    {{else}}
+    <p><b>Essence Advancement</b></p>
+    <table>
+        <tr style="text-align:center;">
+            <th>Essence</th>
+            <th>XP</th>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 2</td>
+            <td>50</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 3</td>
+            <td>125</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 4</td>
+            <td>200</td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>Essence 5</td>
+            <td>300</td>
+        </tr>
+    </table>
+    {{/ifEquals}}
+</div>

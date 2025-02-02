@@ -1,0 +1,7 @@
+2025/02/01-23:43:03.031339 7ffed98b3a30 Recovering log #2617
+2025/02/01-23:43:03.042194 7ffed98b3a30 Delete type=0 #2617
+2025/02/01-23:43:03.042215 7ffed98b3a30 Delete type=3 #2615
+2025/02/01-23:53:22.082983 7ffcd817fa30 Level-0 table #2622: started
+2025/02/01-23:53:22.083031 7ffcd817fa30 Level-0 table #2622: 0 bytes OK
+2025/02/01-23:53:22.088346 7ffcd817fa30 Delete type=0 #2620
+2025/02/01-23:53:22.106619 7ffcd817fa30 Manual compaction at level-0 from '!macros!1DzE1wb4SdzAAGxA' @ 72057594037927935 : 1 .. '!macros!pyJc45XWkMkKsluN' @ 0 : 0; will stop at (end)

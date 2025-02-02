@@ -1,0 +1,20 @@
+{
+  "id": "system.exaltedthird.2025-02-01.1738446474205",
+  "title": "Exalted Third Edition",
+  "description": "Unofficial Exalted third edition system module for FoundryVTT!  Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission. All rights reserved. For more information please visit worldofdarkness.com.",
+  "version": "3.5.8",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "relationships": [],
+  "size": 5470835,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 7447931,
+  "createdAt": 1738446474205,
+  "packageId": "exaltedthird",
+  "type": "system",
+  "system": null
+}

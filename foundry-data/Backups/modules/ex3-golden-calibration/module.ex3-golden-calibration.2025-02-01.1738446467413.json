@@ -1,0 +1,33 @@
+{
+  "id": "module.ex3-golden-calibration.2025-02-01.1738446467413",
+  "title": "Exalted Third Edition Golden Calibration",
+  "description": "A foundry version of the fan made golden calibration charmset",
+  "version": "1.2.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": [
+          null
+        ]
+      }
+    ],
+    "requires": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 784643,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 1393528,
+  "createdAt": 1738446467413,
+  "packageId": "ex3-golden-calibration",
+  "type": "module",
+  "system": null
+}

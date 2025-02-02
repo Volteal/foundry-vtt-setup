@@ -1,0 +1,31 @@
+{
+  "id": "module.horrors-of-the-underway-stockade.2025-02-01.1738446468000",
+  "title": "Horrors of the Underway Stockade",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "description": "",
+  "size": 3613,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 3119,
+  "createdAt": 1738446468000,
+  "packageId": "horrors-of-the-underway-stockade",
+  "type": "module",
+  "system": null
+}

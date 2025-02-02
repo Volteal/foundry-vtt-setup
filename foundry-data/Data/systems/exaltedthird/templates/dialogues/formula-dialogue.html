@@ -1,0 +1,46 @@
+<div>
+    <p><b>Formula Guide</b></p>
+    <p>
+        Entry's marked with a '*' symbol can have a basic formula inputted, refer to the guidelines below. All
+        fields should be one word and lowercase.
+    </p>
+    <p>
+        Abilities/Attributes can be used such as strength or martialarts. Also works on essence/limit/willpower and defense values like soak/defense/resolve/guile.
+    </p>
+    <p>
+        Custom Abilities also work, use the "Formula Key" field which defaults to the name lowercased but not space for example "Black Claw Style" could be used in a formula with 'blackclawstyle'.  This key may be overwriten in the Custom Ability sheet.
+    </p>
+    <p>
+        'attributeupgrade' is how you add the Transpuissant (Attribute) Upgrade dice, these are not added by default with attribute formulas.  For sample use 'strengthupgrade', if your upgrade is 2 it will add 2 dice.
+    </p>
+    <p>
+        'evasionpenalty', 'parrypenalty', nonsurprisedparrypenalty, nonsurprisedevasionpenalty, 'woundpenalty', 'armorpenalty', and 'onslaught' can be inputted to use those values from active effects.
+    </p>
+    <p>
+        'activationcount': will activate on active charms (Defaulting to 1) that takes how many times you activated it.
+    </p>
+    <p>
+        Placing a '-' in front of a value will cause it to subtract instead of add. Ex. -essence
+    </p>
+    <p>
+        Placing a 'target-' in front of a value will cause it to use the targets value (If multiple targets it will use
+        the first one). Ex. target-essence, For negatives use -target-essence.
+    </p>
+    <p>
+        Operands can be used to calculate certain mathamatical values. Values should look similar to the following
+        example formats: essence + strength, essence | 3. Values on left and right must follow the rules above or be a
+        number.  For negative values use the following format -(athletics + stamina).
+    </p>
+    <ul>
+        <li>'+': Add two values together</li>
+        <li>'-' Subract right value from left</li>
+        <li>'/&gt;': Divide left value by right and round up</li>
+        <li>'/&lt;': Divide left value by right and round down</li>
+        <li>'*': Multiply left value by right</li>
+        <li>'|': Take the highest of two values</li>
+        <li>'cap': Take lowest of the two values</li>
+    </ul>
+    <p>
+        These formulas also work on Active Effects (Except target-)
+    </p>
+</div>

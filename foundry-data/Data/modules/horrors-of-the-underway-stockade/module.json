@@ -1,0 +1,39 @@
+{
+  "id": "horrors-of-the-underway-stockade",
+  "title": "Horrors of the Underway Stockade",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "volteal",
+      "discord": "volteal",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "underway-stockade-adventure",
+      "label": "Underway Stockade Adventure",
+      "path": "packs/underway-stockade-adventure",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "exaltedthird",
+      "flags": {}
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<div class="exaltedthird chat-card item-card" data-actor-id="{{actor.id}}" data-item-id="{{item.id}}" {{#if
+    tokenId}}data-token-id="{{tokenId}}" {{/if}}>
+    <header class="card-header flexrow item-row">
+        <img src="{{item.img}}" title="{{item.name}}" width="36" height="36" />
+        <h3 class="item-name">{{item.name}}{{#if cardType}}: {{cardType}}{{/if}}  <span class="capitalize">{{#if item.system.strength}}({{item.system.strength}}){{/if}}</span></h3>
+    </header>
+
+    <div class="card-content item-description">
+        {{#if item.system.traits.weapontags.selected}}
+        <div class="mt-1">
+            {{#each item.system.traits.weapontags.selected as |v k|}}
+            <span class="tag {{k}}">{{v}}</span>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{#if item.system.traits.armortags.selected}}
+        <div class="mt-1">
+            {{#each item.system.traits.armortags.selected as |v k|}}
+            <span class="tag {{k}}">{{v}}</span>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{#if item.system.traits.weapons.selected}}
+        <div class="mt-1">
+            {{#each item.system.traits.weapons.selected as |v k|}}
+            <span class="tag {{k}}">{{v}}</span>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{#ifEquals item.type 'charm'}}
+        <div>
+            {{{charmCostDisplay item.system}}}
+        </div>
+        <div>
+            <b>{{localize "Ex3.Mins"}}</b>: {{#ifNotEquals item.system.requirement "0"}}<span class="capitalize">{{getAbilityDisplay actor item.system.ability}}</span> {{item.system.requirement}}, {{/ifNotEquals}} Essence {{item.system.essence}}
+        </div>
+        <div>
+            <b>{{localize "Ex3.Type"}}</b>: {{item.system.type}}
+        </div>
+        {{#if item.system.keywords}}
+        <div>
+            <b>{{localize "Ex3.Keywords"}}</b>: {{item.system.keywords}}
+        </div>
+        {{/if}}
+        <div>
+            <b>{{localize "Ex3.Duration"}}</b>: {{item.system.duration}}
+        </div>
+        {{/ifEquals}}
+
+        {{#ifEquals item.type 'spell'}}
+        <div>
+            <b>{{localize "Ex3.Cost"}}</b>: {{#if item.system.cost}} {{item.system.cost}}sm{{else}} Ritual{{/if}}, {{item.system.willpower}}wp
+        </div>
+        <div>
+            <b>{{localize "Ex3.Circle"}}</b>: {{item.system.circle}}
+        </div>
+        {{#if item.system.keywords}}
+        <div>
+            <b>{{localize "Ex3.Keywords"}}</b>: {{item.system.keywords}}
+        </div>
+        {{/if}}
+        <div>
+            <b>{{localize "Ex3.Duration"}}</b>: {{item.system.duration}}
+        </div>
+        {{/ifEquals}}
+        {{{item.system.description}}}
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{
+  "id": "ex3-all-locations-map",
+  "title": "Exalted Third Edition All Locations Map",
+  "description": "A linked map with journal entries linking to book page numbers",
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "url": "https://github.com/Aliharu/Ex3-All-Locations-Map",
+  "manifest": "https://raw.githubusercontent.com/Aliharu/Ex3-All-Locations-Map/master/module.json",
+  "download": "https://github.com/Aliharu/Ex3-All-Locations-Map/archive/v2.0.0.zip",
+  "bugs": "https://github.com/Aliharu/Ex3-All-Locations-Map/issues",
+  "readme": "https://github.com/Aliharu/Ex3-All-Locations-Map/blob/main/README.md",
+  "packs": [
+    {
+      "name": "ex3-all-locations-map",
+      "label": "Exalted 3e All Locations Map",
+      "path": "packs/ex3-all-locations-map.db",
+      "type": "Adventure",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Aliharu",
+      "flags": {}
+    }
+  ]
+}

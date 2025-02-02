@@ -1,0 +1,38 @@
+{
+  "id": "module.token-action-hud-core.2025-02-01.1738446468093",
+  "title": "Token Action HUD Core",
+  "description": "Token Action HUD is a repositionable HUD of actions for a selected token",
+  "version": "2.0.11",
+  "compatibility": {
+    "minimum": "12.331",
+    "verified": "12.331"
+  },
+  "relationships": {
+    "systems": [],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "flags": {
+      "optional": [
+        {
+          "id": "color-picker",
+          "reason": "To enable color pickers in the module settings"
+        }
+      ]
+    },
+    "recommends": [],
+    "conflicts": []
+  },
+  "size": 249987,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 1095432,
+  "createdAt": 1738446468093,
+  "packageId": "token-action-hud-core",
+  "type": "module",
+  "system": null
+}

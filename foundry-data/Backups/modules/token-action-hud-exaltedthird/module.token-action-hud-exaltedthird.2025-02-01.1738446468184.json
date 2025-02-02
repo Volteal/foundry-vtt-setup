@@ -1,0 +1,41 @@
+{
+  "id": "module.token-action-hud-exaltedthird.2025-02-01.1738446468184",
+  "title": "Token Action Hud Exalted Third Edition",
+  "description": "Provide Support for Exalted Third in TokenHub",
+  "version": "1.3.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": [
+          null
+        ]
+      }
+    ],
+    "requires": [
+      {
+        "id": "token-action-hud-core",
+        "type": "module",
+        "compatibility": [
+          null
+        ]
+      }
+    ],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 8051,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 32682,
+  "createdAt": 1738446468184,
+  "packageId": "token-action-hud-exaltedthird",
+  "type": "module",
+  "system": null
+}

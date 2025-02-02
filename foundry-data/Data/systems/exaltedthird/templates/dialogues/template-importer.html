@@ -1,0 +1,88 @@
+<div class="exaltedthird">
+    <div>
+      Copy and paste text from official Exalted 3e books to create FoundryVTT Actors/Items.  Some edits will need to be done to make the importer work.  Make sure the text fits the example format.
+    </div>
+    <div class="mb-2 mt-2">
+      <input class="radio" id="charm-radio" type="radio" name="type" value="charm" data-dtype="String" value="{{type}}"
+        {{#ifEquals type 'charm' }} checked {{/ifEquals}} />
+      <label for="charm-radio">{{ localize "Ex3.Charm"}}</label>
+      <input class="radio" id="spell-radio" type="radio" name="type" value="spell" data-dtype="String" value="{{type}}"
+        {{#ifEquals type 'spell' }} checked {{/ifEquals}} />
+        <label for="spell-radio">{{ localize "Ex3.Spell"}}</label>
+      <input class="radio" id="adversary-radio" type="radio" name="type" value="adversary" data-dtype="String"
+        value="{{type}}" {{#ifEquals type 'adversary' }} checked {{/ifEquals}} />
+        <label for="adversary-radio">{{ localize "Ex3.Adversary"}}</label>
+      <input class="radio" id="qc-radio" type="radio" name="type" value="qc" data-dtype="String" value="{{type}}"
+        {{#ifEquals type 'qc' }} checked {{/ifEquals}} />
+        <label for="qc-radio">{{ localize "Ex3.QuickCharacter"}}</label>
+      <input class="radio" id="other-radio" type="radio" name="type" value="other" data-dtype="String" value="{{type}}"
+      {{#ifEquals type 'other' }} checked {{/ifEquals}} />
+      <label for="other-radio">{{ localize "Ex3.Other"}}</label>
+    </div>
+    {{#if showError}}
+    {{#ifEquals type 'qc' }}
+    <div class="mb-2" style="color:red;">
+      Failed on section: {{errorSection}} 
+    </div>
+    {{/ifEquals}}
+    {{#ifEquals type 'adversary' }}
+    <div class="mb-2" style="color:red;">
+      Failed on section: {{errorSection}} 
+    </div>
+    {{/ifEquals}}
+    <div class="mb-2" style="color:red;">
+      Failed on line text: {{error}} 
+    </div>
+    {{/if}}
+
+    <div class="resource grid grid-2col flex-center">
+      <div>
+        <div class="resource-label">{{localize "Ex3.Folder"}}</div>
+        <select id="folder" name="folder" value="{{folder}}" data-type="String">
+            {{selectOptions folders selected=folder localize=true}}
+        </select>
+      </div>
+      <!-- {{#ifEquals type 'qc'}}
+      <div>
+        <div class="resource-label">{{localize "Ex3.TemplateType"}} (Only for Primary/Secondary/Tertiary statblocks)</div>
+        <select id="templateType" name="templateType" value="{{templateType}}" data-type="String">
+            {{selectOptions selects.statblockTemplateTypes selected=templateType localize=true blank=''}}
+        </select>
+      </div>
+      {{/ifEquals}} -->
+      {{#ifEquals type 'charm'}}
+      <div>
+        <div class="resource-label">{{localize "Ex3.CharmType"}}</div>
+        <select id="charmType" name="charmType" value="{{charmType}}" data-type="String">
+            {{selectOptions charmTypes selected=charmType localize=true}}
+        </select>
+      </div>
+      <div>
+        <div class="resource-label">{{localize "Ex3.ListingName"}}</div>
+        <input id="listingName" type="text" name="listingName" value="{{listingName}}" style="max-width:75%; margin-left:3px;"/>
+      </div>
+      {{/ifEquals}}
+  
+      {{#ifEquals type 'spell'}}
+      <div>
+        <div class="resource-label">{{localize "Ex3.Circle"}}</div>
+        <select id="spellCircle" name="spellCircle" value="{{spellCircle}}" data-type="String">
+            {{selectOptions selects.allSpellCircles selected=spellCircle localize=true}}
+        </select>
+      </div>
+      {{/ifEquals}}
+
+      {{#ifEquals type 'other'}}
+      <div>
+        <div class="resource-label">{{localize "Ex3.ItemType"}}</div>
+        <select id="itemType" name="itemType" value="{{itemType}}" data-type="String">
+          {{selectOptions selects.templateItemTypes selected=itemType localize=true}}
+        </select>
+      </div>
+      {{/ifEquals}}
+    </div>
+
+    <label class="resource-label">{{ localize "Ex3.Template"}}</label>
+    <textarea name="textBox" type="text" id="template-text" rows="40" placeholder='{{templateHint}}'>{{textBox}}</textarea>
+    <!-- <button type="button" id="import-template" data-action="import">Import</button> -->
+</div>

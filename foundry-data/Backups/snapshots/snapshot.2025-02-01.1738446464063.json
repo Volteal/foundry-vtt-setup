@@ -1,0 +1,29 @@
+{
+  "type": "snapshot",
+  "generation": 12,
+  "build": 331,
+  "id": "snapshot.2025-02-01.1738446464063",
+  "note": "2025-02-01",
+  "originalSize": 171723684,
+  "createdAt": 1738446465128,
+  "size": 143370980,
+  "backups": [
+    "module.colorsettings.2025-02-01.1738446465132",
+    "module.enhancedcombathud.2025-02-01.1738446465232",
+    "module.enhancedcombathud-dnd5e.2025-02-01.1738446465486",
+    "module.enhancedcombathud-exaltedthird.2025-02-01.1738446465542",
+    "module.ex3-all-locations-map.2025-02-01.1738446465594",
+    "module.ex3-golden-calibration.2025-02-01.1738446467413",
+    "module.forien-quest-log.2025-02-01.1738446467549",
+    "module.foundryvtt-simple-calendar.2025-02-01.1738446467842",
+    "module.horrors-of-the-underway-stockade.2025-02-01.1738446468000",
+    "module.lib-wrapper.2025-02-01.1738446468030",
+    "module.socketlib.2025-02-01.1738446468077",
+    "module.token-action-hud-core.2025-02-01.1738446468093",
+    "module.token-action-hud-exaltedthird.2025-02-01.1738446468184",
+    "module.tokenmagic.2025-02-01.1738446468202",
+    "system.dnd5e.2025-02-01.1738446468700",
+    "system.exaltedthird.2025-02-01.1738446474205",
+    "world.underway-stockade.2025-02-01.1738446474871"
+  ]
+}

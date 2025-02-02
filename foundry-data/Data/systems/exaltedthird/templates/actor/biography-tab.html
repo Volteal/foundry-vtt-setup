@@ -1,0 +1,10 @@
+{{#ifEquals actor.type 'character'}}
+{{#if system.settings.showescort}}
+<div>
+    <label class="resource-label">{{localize "Ex3.Escort"}}</label>
+    <textarea type="text" name="system.escort" rows="6">{{system.escort}}</textarea>
+</div>
+{{/if}}
+{{/ifEquals}}
+<div class="resource-label flex-center">{{localize "Ex3.CharacterNotes"}}</div>
+{{editor biographyHTML target="system.biography" button=true editable=editable engine="prosemirror"}}

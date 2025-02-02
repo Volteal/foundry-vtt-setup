@@ -1,0 +1,40 @@
+{
+  "id": "module.enhancedcombathud-exaltedthird.2025-02-01.1738446465542",
+  "title": "Argon - Combat HUD (EXALTEDTHIRD)",
+  "description": "An Argon version for the Exalted Third Edition game system",
+  "version": "0.7.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "enhancedcombathud",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": [
+          null
+        ]
+      }
+    ],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 25110,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 68860,
+  "createdAt": 1738446465542,
+  "packageId": "enhancedcombathud-exaltedthird",
+  "type": "module",
+  "system": null
+}

@@ -1,0 +1,58 @@
+{
+  "id": "enhancedcombathud-exaltedthird",
+  "title": "Argon - Combat HUD (EXALTEDTHIRD)",
+  "description": "An Argon version for the Exalted Third Edition game system",
+  "version": "0.7.0",
+  "library": "false",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 12,
+    "maximum": 12
+  },
+  "authors": [
+    {
+      "name": "Aliharu",
+      "url": "https://github.com/Aliharu",
+      "discord": "aliharu"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "enhancedcombathud",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "exaltedthird",
+        "type": "system",
+        "compatibility": [
+          {
+            "minimum": "3.5.0",
+            "verified": "3.5.0"
+          }
+        ]
+      }
+    ]
+    },
+  "esmodules": [
+    "scripts/ex3ui.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/Aliharu/enhancedcombathud-exaltedthird",
+  "manifest": "https://github.com/Aliharu/enhancedcombathud-exaltedthird/releases/latest/download/module.json",
+  "download": "https://github.com/Aliharu/enhancedcombathud-exaltedthird/releases/download/0.7.0/module.zip",
+  "license": "LICENSE",
+  "readme": "README.md"
+}

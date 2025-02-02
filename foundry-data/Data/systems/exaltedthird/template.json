@@ -1,0 +1,36 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc"
+    ],
+    "htmlFields": [
+      "biography"
+    ]
+  },
+  "Item": {
+    "types": [
+      "action",
+      "armor",
+      "charm",
+      "craft",
+      "craftproject",
+      "customability",
+      "martialart",
+      "destiny",
+      "intimacy",
+      "item",
+      "merit",
+      "ritual",
+      "initiation",
+      "shape",
+      "specialability",
+      "specialty",
+      "spell",
+      "weapon"
+    ],
+    "htmlFields": [
+      "description"
+    ]
+  }
+}

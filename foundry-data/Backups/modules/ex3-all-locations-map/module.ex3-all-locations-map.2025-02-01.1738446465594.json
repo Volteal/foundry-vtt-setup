@@ -1,0 +1,25 @@
+{
+  "id": "module.ex3-all-locations-map.2025-02-01.1738446465594",
+  "title": "Exalted Third Edition All Locations Map",
+  "description": "A linked map with journal entries linking to book page numbers",
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "relationships": {
+    "requires": [],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 43333552,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 43468805,
+  "createdAt": 1738446465594,
+  "packageId": "ex3-all-locations-map",
+  "type": "module",
+  "system": null
+}

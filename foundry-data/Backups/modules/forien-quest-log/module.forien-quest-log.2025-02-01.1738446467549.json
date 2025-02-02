@@ -1,0 +1,26 @@
+{
+  "id": "module.forien-quest-log.2025-02-01.1738446467549",
+  "title": "Forien's Quest Log",
+  "description": "Provides comprehensive Quest Log system for players and Game Masters",
+  "version": "v0.8.1",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "relationships": {
+    "requires": [],
+    "systems": [],
+    "recommends": [],
+    "conflicts": [],
+    "flags": {}
+  },
+  "size": 640758,
+  "note": "",
+  "snapshotId": "snapshot.2025-02-01.1738446464063",
+  "originalSize": 1304217,
+  "createdAt": 1738446467549,
+  "packageId": "forien-quest-log",
+  "type": "module",
+  "system": null
+}

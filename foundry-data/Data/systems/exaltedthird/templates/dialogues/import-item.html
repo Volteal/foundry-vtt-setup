@@ -1,0 +1,80 @@
+<div class="sheet-body exaltedthird">
+    <ol class="items-list">
+        {{#each sectionList as |section key|}}
+        <div class="item d-flex flex-between mb-1 collapsable cursor-pointer">
+            <li class="flexrow item-header">
+                <div class="item-name">{{localize section.name}}</div>
+            </li>
+            <div>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+        <div id="{{key}}" style="display:none;">
+            {{#each section.list as |item index|}}
+            <li class="item flexrow item-row collapsable" data-item-id="{{item._id}}">
+                <div class="item-image"><img class="list-item-image" src="{{item.img}}" title="{{item.name}}" width="24"
+                        height="24" /></div>
+                <h4 class="item-name">{{item.name}}</h4>
+                <div class="item-controls"><a class="item-control add-item" title="Add Item"><i
+                            class="fas fa-plus"></i></a>
+            </li>
+            <li class="item-description">
+                {{#if item.system.points}}
+                <div>
+                    <b>{{localize "Ex3.Cost"}}</b>: {{item.system.points}}
+                </div>
+                {{/if}}
+                {{#if item.system.traits.weapontags.value}}
+                <div class="mt-1">
+                    {{#each item.system.traits.weapontags.selected as |v k|}}
+                    <span class="tag {{k}}">{{v}}</span>
+                    {{/each}}
+                </div>
+                {{/if}}
+                {{#if item.system.traits.armortags.value}}
+                <div class="mt-1">
+                    {{#each item.system.traits.armortags.selected as |v k|}}
+                    <span class="tag {{k}}">{{v}}</span>
+                    {{/each}}
+                </div>
+                {{/if}}
+                {{#if item.system.traits.weapons.value}}
+                <div class="mt-1">
+                    {{#each item.system.traits.weapons.value as |v k|}}
+                    <span class="tag {{k}}">{{v}}</span>
+                    {{/each}}
+                </div>
+                {{/if}}
+                {{#ifEquals item.type 'charm'}}
+                <div>
+                    {{{charmCostDisplay item.system}}}
+                </div>
+                <div>
+                    <b>{{localize "Ex3.Mins"}}</b>: {{#ifNotEquals item.system.requirement "0"}}<span class="capitalize">{{item.system.ability}}</span>
+                    {{item.system.requirement}}, {{/ifNotEquals}} Essence {{item.system.essence}}
+                </div>
+                <div>
+                    <b>{{localize "Ex3.Type"}}</b>: {{item.system.type}}
+                </div>
+                {{#if item.system.keywords}}
+                <div>
+                    <b>{{localize "Ex3.Keywords"}}</b>: {{item.system.keywords}}
+                </div>
+                {{/if}}
+                <div>
+                    <b>{{localize "Ex3.Duration"}}</b>: {{item.system.duration}}
+                </div>
+                <div>
+                    <b>{{localize "Ex3.Prerequisites"}}</b>: {{#each item.system.charmprerequisites as |prereq
+                    id|}}<span>{{prereq.name}},</span>{{/each}} {{item.system.prerequisites}}
+                </div>
+                {{/ifEquals}}
+                <div>
+                    {{{item.enritchedHTML}}}
+                </div>
+            </li>
+            {{/each}}
+        </div>
+        {{/each}}
+    </ol>
+</div>
